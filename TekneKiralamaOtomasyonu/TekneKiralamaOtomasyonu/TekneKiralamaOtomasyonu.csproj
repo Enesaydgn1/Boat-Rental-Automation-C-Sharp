@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB463D0A-6BBE-4383-895B-CF9A9BB6146B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TekneKiralamaOtomasyonu</RootNamespace>
+    <AssemblyName>TekneKiralamaOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiyatSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatSorgulama.Designer.cs">
+      <DependentUpon>FiyatSorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Galeri.Designer.cs">
+      <DependentUpon>Galeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galeri_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Galeri_Admin.Designer.cs">
+      <DependentUpon>Galeri_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisYap.Designer.cs">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Admin.Designer.cs">
+      <DependentUpon>Kullanici_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizasyon.Designer.cs">
+      <DependentUpon>Organizasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizasyonlar_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizasyonlar_admin.Designer.cs">
+      <DependentUpon>Organizasyonlar_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yatlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yatlar.Designer.cs">
+      <DependentUpon>Yatlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yatlarimiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yatlarimiz.Designer.cs">
+      <DependentUpon>Yatlarimiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yatlar_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yatlar_Admin.Designer.cs">
+      <DependentUpon>Yatlar_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiSayfasi.Designer.cs">
+      <DependentUpon>YoneticiSayfasi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiyatSorgulama.resx">
+      <DependentUpon>FiyatSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Galeri.resx">
+      <DependentUpon>Galeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisYap.resx">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Admin.resx">
+      <DependentUpon>Kullanici_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizasyon.resx">
+      <DependentUpon>Organizasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizasyonlar_admin.resx">
+      <DependentUpon>Organizasyonlar_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yatlar.resx">
+      <DependentUpon>Yatlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yatlarimiz.resx">
+      <DependentUpon>Yatlarimiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yatlar_Admin.resx">
+      <DependentUpon>Yatlar_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiSayfasi.resx">
+      <DependentUpon>YoneticiSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\button-galeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\closesimid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\çıkışyap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\BeyazÇıkışYap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\Tekne_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\Tekne1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\çerçeve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\çapa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\çıkışyapbuton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\çıkışyapbuton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\fiyatlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\rezerve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\kullanıcılarbuton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\Kullanıcılar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-dogum-gunu-kutlama-suslemeleri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-dogum-gunu-organizasyonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-iftar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-is-toplantisi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-evlilik-teklifi-surprizi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\tur-ile-bogazı-kesfet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\teknede-bekarliga-veda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\yatta-sevgiliye-dogum-gunu-surprizi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\images\bogazda-yat-gezisi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
